@@ -1,0 +1,135 @@
+/* Section Layout */
+.contact-section {
+  padding: 70px 20px;
+  background: #1a1a1a;
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+.contact-title {
+  font-size: 38px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #ffba08;
+  text-shadow: 0px 0px 10px rgba(255, 186, 8, 0.4);
+}
+
+/* Form */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: #222;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(255, 186, 8, 0.28);
+  text-align: left;
+}
+
+/* Labels & Inputs */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #ffba08;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 2px solid #444;
+  background: #111;
+  color: white;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ffba08;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 186, 8, 0.5);
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  background: #ffba08;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #ff9900;
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.6);
+}
+
+/* Status Text */
+.status-text {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffba08;
+}
+.contact-social {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.contact-social img {
+  width: 56px;
+  height: 56px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.contact-social img:hover {
+  transform: scale(1.2);
+  filter:
+    drop-shadow(0 0 10px #0a66c2)
+    drop-shadow(0 0 25px rgba(10, 102, 194, 0.9));
+}
+.contact-social img {
+  width: 36px;     /* smaller size */
+  height: 36px;
+  padding: 8px;    /* keeps circle shape */
+}
+.contact-social img {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  /* ALWAYS glow */
+  filter:
+    drop-shadow(0 0 8px #0a66c2)
+    drop-shadow(0 0 18px rgba(10, 102, 194, 0.8));
+
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* optional: little zoom on hover */
+.contact-social img:hover {
+  transform: scale(1.15);
+}
+

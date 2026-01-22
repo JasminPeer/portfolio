@@ -1,0 +1,86 @@
+/* Home Section */
+.home-container {
+  min-height: 45vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* "Hi, I am" adaptive color */
+.home-container.dark .hi {
+  color: #ffffff; /* white in dark mode */
+}
+
+.home-container.light .hi {
+  color: #111111; /* black in light mode */
+}
+
+/* Name — brown */
+.name {
+  font-size: 2.6rem;
+  color: #8b4513;
+  font-weight: 700;
+}
+
+/* Underline with subtle glow */
+.name-underline {
+  width: 120px;
+  height: 3px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  background-color: #8b4513;
+  box-shadow: 0 0 4px #8b4513, 0 0 8px rgba(139,69,19,0.5);
+  animation: glow 2s infinite alternate;
+}
+
+.home-container.light .name-underline {
+  background-color: #8b4513;
+  box-shadow: 0 0 2px #8b4513, 0 0 5px rgba(139,69,19,0.3);
+}
+/* Only give bottom space (20px) to all sections */
+.section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 4px #8b4513, 0 0 8px rgba(139,69,19,0.5); }
+  50% { box-shadow: 0 0 6px #8b4513, 0 0 12px rgba(139,69,19,0.5); }
+  100% { box-shadow: 0 0 4px #8b4513, 0 0 8px rgba(139,69,19,0.5); }
+}
+
+/* Skills typing text */
+.home-container.dark .typing-text {
+  color: #00ffff; /* cyan glow for dark mode */
+  text-shadow: 0 0 6px #00ffff, 0 0 12px rgba(0,255,255,0.6);
+}
+
+.home-container.light .typing-text {
+  color: #008b8b; /* subtle teal for light mode */
+  text-shadow: 0 0 2px #008b8b, 0 0 4px rgba(0,139,139,0.3);
+}
+
+/* Cursor blink */
+.cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

@@ -1,0 +1,127 @@
+/* --------------------------
+   Section Title
+--------------------------- */
+.name {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #8b4513;
+  text-align: center;
+}
+
+.name-underline {
+  width: 120px;
+  height: 3px;
+  margin: 6px auto 20px;
+  background: #8b4513;
+  border-radius: 4px;
+  box-shadow: 0 0 6px #8b4513;
+}
+
+/* --------------------------
+   Project Cards Layout
+--------------------------- */
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 20px;
+  flex-wrap: nowrap; /* keep all three in same line */
+}
+
+/* --------------------------
+   Project Card
+--------------------------- */
+.project-card {
+  width: 330px;
+  height: 430px;
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 0 12px #333;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #8b4513;
+}
+
+/* --------------------------
+   Image
+--------------------------- */
+.project-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* --------------------------
+   Title (UPDATED TO DARK)
+--------------------------- */
+.project-title {
+  margin-top: 14px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222222; /* dark color */
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+#projects {
+  scroll-margin-top: 90px; /* adjust based on navbar height */
+}
+
+
+/* --------------------------
+   Description (UPDATED TO DARK)
+--------------------------- */
+.project-desc {
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #333333; /* dark gray */
+  line-height: 1.5;
+}
+
+/* --------------------------
+   Video Button
+--------------------------- */
+.project-icons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-btn {
+  width: 55px;
+  height: 55px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #8b4513;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 14px #b86f2b;
+}
+
+.video-icon {
+  width: 32px;
+}
+
+/* Mobile size fix (optional) */
+@media (max-width: 768px) {
+  .project-grid {
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 90%;
+    height: auto;
+  }
+}

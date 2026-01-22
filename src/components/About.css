@@ -1,0 +1,42 @@
+/* About Section */
+.about-container {
+  min-height: 50vh;
+  width: 80%;
+  margin: 0 auto;       /* remove all top/bottom margin */
+  padding: 0;           /* remove all padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  top: 0;               /* remove upward shift */
+}
+
+/* About Title */
+.about-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;      /* only spacing below title */
+  color: #8b4513;
+  text-shadow: 0 0 10px rgba(139, 69, 19, 0.7); /* glow effect */
+  border: none;
+  padding: 0;
+}
+
+/* About Text */
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 750px;
+  font-weight: 500;
+  color: #111111;
+  text-align: center;
+  margin: 0;           /* remove default paragraph margins */
+}
+
+/* Dark Mode */
+body.dark-theme .about-text {
+  color: #ffffff;
+}

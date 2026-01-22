@@ -1,0 +1,38 @@
+.social-links {
+  position: fixed;
+  top: 88px;                 /* slightly under navbar */
+  right: 32px;
+  display: flex;
+  gap: 20px;
+  z-index: 900;
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+/* icons */
+.social-links img {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+/* clean glow + motion */
+.social-links img:hover {
+  transform: scale(1.2) rotate(3deg);
+  filter: drop-shadow(0 0 8px #0a66c2)
+          drop-shadow(0 0 18px rgba(10, 102, 194, 0.8));
+}
+
+/* entry animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
